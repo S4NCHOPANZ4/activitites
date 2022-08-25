@@ -87,7 +87,7 @@ header a:hover{
 }
 #hero h1{
     margin: 0;
-    font-size: 3.5em;
+    font-size: 10vw;
     font-weight: bolder;
 }
 #hero h2{
@@ -111,7 +111,7 @@ header a:hover{
 }
 
 #info1 .container{
-    padding: 100px 12px 100px 12px;
+    padding: 100px 12px 10px 12px;
 }
 #info1 p{
     display: none;
@@ -245,8 +245,9 @@ video{
 }
 #wp h2{
     margin: 0;
-    padding: 10px;
-    font-size: 5vw;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    font-size: 3vw;
 }
 
 
@@ -293,6 +294,9 @@ video{
         height: 500px;
         width: 500px;   
      
+    }
+    #info1{
+        padding-bottom: 10px;
     }
     #info1 .programas{
         display: flex;
