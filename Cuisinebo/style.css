@@ -1,0 +1,298 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 100px;
+}
+header .upper {
+  display: flex;
+  color: white;
+  background-color: hsla(0deg, 0%, 0%, 0.5);
+  text-align: justify;
+  justify-content: center;
+  margin-bottom: 75px;
+  padding: 50px 100px 50px 100px;
+}
+header .upper .img-upper {
+  min-width: 150px;
+  height: 150px;
+  background-image: url("img/logo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header .upper .upper-text h1 {
+  padding-top: 25px;
+  font-size: 3em;
+  font-weight: 100;
+}
+header .upper .upper-text h3 {
+  font-size: 1.5em;
+  font-weight: 100;
+}
+header .lower {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header .lower h1 {
+  padding-top: 100px;
+  margin: 50px;
+  font-size: 4em;
+  font-weight: 300;
+}
+header .lower h3 {
+  padding-bottom: 200px;
+  font-weight: 300;
+  font-size: 1.5em;
+}
+
+.grid-container {
+  background-color: #373c47;
+  min-width: 250px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 350px;
+}
+.grid-container .img1 {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/img1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.grid-container .img1 .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 132, 255, 0.5215686275);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 0.5s;
+  color: white;
+}
+.grid-container .img1 .content h3 {
+  font-size: 2em;
+  font-weight: 300;
+}
+.grid-container .img1 .content button {
+  width: 30%;
+  height: 10%;
+  margin: 10px;
+  border-radius: 20px;
+  font-weight: bold;
+  border-style: none;
+  color: #0082ff;
+}
+.grid-container .img1 .content:hover {
+  opacity: 1;
+}
+.grid-container .img2 {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/img2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.grid-container .img2 .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 132, 255, 0.5215686275);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 0.5s;
+  color: white;
+}
+.grid-container .img2 .content h3 {
+  font-size: 2em;
+  font-weight: 300;
+}
+.grid-container .img2 .content button {
+  width: 30%;
+  height: 10%;
+  margin: 10px;
+  border-radius: 20px;
+  font-weight: bold;
+  border-style: none;
+  color: #0082ff;
+}
+.grid-container .img2 .content:hover {
+  opacity: 1;
+}
+.grid-container .img3 {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/img3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.grid-container .img3 .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 132, 255, 0.5215686275);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 0.5s;
+  color: white;
+}
+.grid-container .img3 .content h3 {
+  font-size: 2em;
+  font-weight: 300;
+}
+.grid-container .img3 .content button {
+  width: 30%;
+  height: 10%;
+  margin: 10px;
+  border-radius: 20px;
+  font-weight: bold;
+  border-style: none;
+  color: #0082ff;
+}
+.grid-container .img3 .content:hover {
+  opacity: 1;
+}
+.grid-container .img4 {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/img4.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.grid-container .img4 .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 132, 255, 0.5215686275);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 0.5s;
+  color: white;
+}
+.grid-container .img4 .content h3 {
+  font-size: 2em;
+  font-weight: 300;
+}
+.grid-container .img4 .content button {
+  width: 30%;
+  height: 10%;
+  margin: 10px;
+  border-radius: 20px;
+  font-weight: bold;
+  border-style: none;
+  color: #0082ff;
+}
+.grid-container .img4 .content:hover {
+  opacity: 1;
+}
+.grid-container .img5 {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/img5.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.grid-container .img5 .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 132, 255, 0.5215686275);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 0.5s;
+  color: white;
+}
+.grid-container .img5 .content h3 {
+  font-size: 2em;
+  font-weight: 300;
+}
+.grid-container .img5 .content button {
+  width: 30%;
+  height: 10%;
+  margin: 10px;
+  border-radius: 20px;
+  font-weight: bold;
+  border-style: none;
+  color: #0082ff;
+}
+.grid-container .img5 .content:hover {
+  opacity: 1;
+}
+.grid-container .img6 {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/img6.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.grid-container .img6 .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 132, 255, 0.5215686275);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 0.5s;
+  color: white;
+}
+.grid-container .img6 .content h3 {
+  font-size: 2em;
+  font-weight: 300;
+}
+.grid-container .img6 .content button {
+  width: 30%;
+  height: 10%;
+  margin: 10px;
+  border-radius: 20px;
+  font-weight: bold;
+  border-style: none;
+  color: #0082ff;
+}
+.grid-container .img6 .content:hover {
+  opacity: 1;
+}
+
+footer {
+  padding: 70px 0;
+  background-color: rgb(37, 37, 37);
+}
+footer .textimg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .textimg .img {
+  min-width: 75px;
+  height: 75px;
+  background-image: url("img/logo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 10px;
+}
+footer .textimg .text {
+  color: white;
+}
+footer .textimg h2 {
+  font-size: 3em;
+  font-weight: 300;
+}
+footer .textimg h3 {
+  font-size: 1em;
+  font-weight: 300;
+}/*# sourceMappingURL=style.css.map */
