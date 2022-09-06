@@ -63,10 +63,15 @@ header .lower h3 {
   grid-auto-rows: 350px;
 }
 .grid-container .img1 {
+  z-index: 4;
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/img1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+}
+.grid-container .img1:hover .content {
+  left: 0%;
 }
 .grid-container .img1 .content {
   display: flex;
@@ -76,9 +81,11 @@ header .lower h3 {
   background-color: rgba(0, 132, 255, 0.5215686275);
   width: 100%;
   height: 100%;
-  opacity: 0;
-  transition: 0.5s;
+  left: -100%;
+  transition: left 0.5s;
   color: white;
+  position: absolute;
+  z-index: 0;
 }
 .grid-container .img1 .content h3 {
   font-size: 2em;
@@ -93,14 +100,17 @@ header .lower h3 {
   border-style: none;
   color: #0082ff;
 }
-.grid-container .img1 .content:hover {
-  opacity: 1;
-}
 .grid-container .img2 {
+  z-index: 3;
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/img2.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+}
+.grid-container .img2:hover .content {
+  left: 0%;
+  opacity: 1;
 }
 .grid-container .img2 .content {
   display: flex;
@@ -110,9 +120,11 @@ header .lower h3 {
   background-color: rgba(0, 132, 255, 0.5215686275);
   width: 100%;
   height: 100%;
+  left: -100%;
   opacity: 0;
-  transition: 0.5s;
+  transition: left 0.5s;
   color: white;
+  position: absolute;
 }
 .grid-container .img2 .content h3 {
   font-size: 2em;
@@ -127,14 +139,17 @@ header .lower h3 {
   border-style: none;
   color: #0082ff;
 }
-.grid-container .img2 .content:hover {
-  opacity: 1;
-}
 .grid-container .img3 {
+  z-index: 2;
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/img3.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+}
+.grid-container .img3:hover .content {
+  left: 0%;
+  opacity: 1;
 }
 .grid-container .img3 .content {
   display: flex;
@@ -144,9 +159,11 @@ header .lower h3 {
   background-color: rgba(0, 132, 255, 0.5215686275);
   width: 100%;
   height: 100%;
+  left: -100%;
   opacity: 0;
-  transition: 0.5s;
+  transition: left 0.5s;
   color: white;
+  position: absolute;
 }
 .grid-container .img3 .content h3 {
   font-size: 2em;
@@ -161,14 +178,17 @@ header .lower h3 {
   border-style: none;
   color: #0082ff;
 }
-.grid-container .img3 .content:hover {
-  opacity: 1;
-}
 .grid-container .img4 {
+  z-index: 4;
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/img4.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+}
+.grid-container .img4:hover .content {
+  left: 0%;
+  opacity: 1;
 }
 .grid-container .img4 .content {
   display: flex;
@@ -178,9 +198,11 @@ header .lower h3 {
   background-color: rgba(0, 132, 255, 0.5215686275);
   width: 100%;
   height: 100%;
+  left: -100%;
   opacity: 0;
-  transition: 0.5s;
+  transition: left 0.5s;
   color: white;
+  position: absolute;
 }
 .grid-container .img4 .content h3 {
   font-size: 2em;
@@ -195,14 +217,17 @@ header .lower h3 {
   border-style: none;
   color: #0082ff;
 }
-.grid-container .img4 .content:hover {
-  opacity: 1;
-}
 .grid-container .img5 {
+  z-index: 3;
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/img5.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+}
+.grid-container .img5:hover .content {
+  left: 0%;
+  opacity: 1;
 }
 .grid-container .img5 .content {
   display: flex;
@@ -212,9 +237,11 @@ header .lower h3 {
   background-color: rgba(0, 132, 255, 0.5215686275);
   width: 100%;
   height: 100%;
+  left: -100%;
   opacity: 0;
-  transition: 0.5s;
+  transition: left 0.5s;
   color: white;
+  position: absolute;
 }
 .grid-container .img5 .content h3 {
   font-size: 2em;
@@ -229,14 +256,17 @@ header .lower h3 {
   border-style: none;
   color: #0082ff;
 }
-.grid-container .img5 .content:hover {
-  opacity: 1;
-}
 .grid-container .img6 {
+  z-index: 2;
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/img6.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+}
+.grid-container .img6:hover .content {
+  left: 0%;
+  opacity: 1;
 }
 .grid-container .img6 .content {
   display: flex;
@@ -246,9 +276,11 @@ header .lower h3 {
   background-color: rgba(0, 132, 255, 0.5215686275);
   width: 100%;
   height: 100%;
+  left: -100%;
   opacity: 0;
-  transition: 0.5s;
+  transition: left 0.5s;
   color: white;
+  position: absolute;
 }
 .grid-container .img6 .content h3 {
   font-size: 2em;
@@ -262,9 +294,6 @@ header .lower h3 {
   font-weight: bold;
   border-style: none;
   color: #0082ff;
-}
-.grid-container .img6 .content:hover {
-  opacity: 1;
 }
 
 footer {
