@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCATMANS WORLD</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+</head>
+
+<style>
+    * {
+        font-family: 'Open Sans', sans-serif;
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+
+    main {
+        padding-top: 5%;
+    }
+
+    .contenedor {
+        padding: 60px;
+        width: 90%;
+        max-width: 1000px;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    .titulo {
+        color: #1F1300;
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    header {
+        width: 100%;
+        height: 600px;
+        background: #FDC830;
+        background: -webkit-linear-gradient(to right, #F7B05B, #CC5803);
+        background: linear-gradient(to right, hsla(33, 91%, 66%, 0.653), hsla(25, 97%, 41%, 0.659)), url("el.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+        position: relative;
+    }
+
+    nav {
+        text-align: right;
+        padding: 30px 50px 0 0;
+    }
+
+    nav a {
+        color: #fff;
+        font-weight: 300;
+        text-decoration: none;
+        margin-right: 10px;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+    }
+
+    header .textos-header {
+        display: flex;
+        height: 430px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .textos-header h1 {
+        font-size: 50px;
+        color: #fff;
+    }
+
+    .textos-header h2 {
+        font-size: 40px;
+        font-weight: 300;
+        color: #fff;
+    }
+
+    .wave {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+
+    /*-------------------------------------*/
+    .contenedor-sobre-nosotros {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .imagen-about-us {
+        width: 48%;
+    }
+
+    .sobre-nosotros .contenido-textos {
+        width: 48%;
+    }
+
+    .contenido-textos h3 {
+        margin-bottom: 15px;
+
+    }
+
+    .contenido-textos h3 span {
+        background: #F7934C;
+        color: #fff;
+        border-radius: 50%;
+        display: inline-block;
+        text-align: center;
+        width: 25px;
+        height: 25px;
+        box-shadow: 0 0 6px rgba(204, 88, 3, 1);
+        padding-top: 1px;
+        margin-right: 5px;
+
+    }
+
+    .contenido-textos p {
+        padding: 0 0 30px 30px;
+        font-weight: 300;
+        text-align: justify;
+    }
+
+    /*-------------------------------------*/
+    .portafolio {
+        background: rgba(224, 224, 224, 0.723)
+    }
+
+    .galeria-port {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .imagen-port {
+        width: 24%;
+        margin-bottom: 10px;
+    }
+
+    .imagen-port img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        display: block;
+        box-shadow: 0 0 6px rgba(0, 0, 0, 1);
+    }
+
+    /*-------------------------------------*/
+    .cards {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .cards .card {
+        background: #F7B05B;
+        display: flex;
+        width: 46%;
+        height: 200px;
+        align-items: center;
+        justify-content: space-evenly;
+        border-radius: 5px;
+        box-shadow: 0 0 6px rgba(204, 88, 3, 1);
+    }
+
+    .cards .card img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border: 3px solid #fff;
+        border-radius: 50%;
+        display: block;
+    }
+
+    .cards .card .contenido-texto-card {
+
+        width: 60%;
+        color: #fff;
+    }
+
+    .cards .card .contenido-texto-card p {
+        font-weight: 300;
+        padding-top: 5px;
+    }
+
+    /*-------------------------------------*/
+    .about-services {
+        padding-bottom: 30px;
+    }
+
+    .servicio-cont {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .servicio-cont .servicio-ind {
+        width: 28%;
+        text-align: center;
+
+    }
+
+    .servicio-ind img {
+        width: 90%;
+
+    }
+
+    .servicio-ind h3 {
+        margin: 10px 0;
+    }
+
+    .servicio-ind p {
+        font-weight: 300;
+        text-align: justify;
+    }
+
+    .servicio-cont .servicio-ind img {
+        height: 200px;
+        box-shadow: 0 0 6px rgba(0, 0, 0, 1);
+    }
+
+    /*-------------------------------------*/
+    footer {
+        background: rgba(224, 224, 224, 0.723);
+        display: flex;
+        text-align: center;
+    }
+
+    @media screen and (max-width: 900px) {
+        header {
+            background-position: center;
+
+        }
+
+        .contenedor-sobre-nosotros {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sobre-nosotros .contenido-textos {
+            padding-top: 5%;
+            width: 90%;
+        }
+
+        .imagen-about-us {
+            width: 90%;
+        }
+
+        .sobre-nosotros .titulo {
+            color: #fff;
+        }
+
+        .cards {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .cards .card {
+            width: 80%;
+        }
+
+        .cards .card:first-child {
+            width: 80%;
+            margin-bottom: 30px;
+        }
+
+        .servicio-cont {
+            justify-content: center;
+            flex-direction: column;
+
+        }
+
+        .servicio-cont .servicio-ind {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 10%;
+        }
+
+        .servicio-cont .servicio-ind p {
+            padding-left: 5%;
+        }
+
+
+    }
+</style>
+
+<body>
+    <header>
+        <nav>
+            <a href="#">G</a>
+            <a href="#">O</a>
+            <a href="#">D</a>
+            <a href="#">H</a>
+            <a href="#">M</a>
+        </nav>
+        <section class="textos-header">
+            <h1>The greatest man on earth</h1>
+            <h2>Hidetaka Miyazaki</h2>
+        </section>
+        <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                style="height: 100%; width: 100%;">
+                <path d="M0.00,49.99 C267.83,203.77 195.03,-20.23 545.48,59.70 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: #fff;"></path>
+            </svg></div>
+
+        <main>
+            <section class="contenedor sobre-nosotros">
+                <h2 class="titulo">Why do I love him?</h2>
+                <div class="contenedor-sobre-nosotros">
+                    <img src="kyj.jpg" alt="" class="imagen-about-us">
+                    <div class="contenido-textos">
+                        <h3><span>1</span> He is cute</h3>
+                        <p>Hey, I just met you, and this is crazy
+                            But here's my number, so call me, maybe
+                            It's hard to look right at you, baby
+                            But here's my number, so call me, maybe
+                            Hey, I just met you, and this is crazy
+                            But here's my number, so call me, maybe
+                            And all the other boys try to chase me
+                            But here's my number, so call me, maybe</p>
+                        <h3><span>2</span>He did Dark Souls</h3>
+                        <p>Dark Souls is a 2011 action role-playing game developed by FromSoftware and published by
+                            Namco Bandai Games. A spiritual successor to FromSoftware's Demon's Souls, the game is the
+                            second installment in the Souls series</p>
+                    </div>
+                </div>
+            </section>
+            <section class="portafolio">
+                <div class="contenedor">
+                    <h2 class="titulo">Pics that prove his beauty</h2>
+                    <div class="galeria-port">
+                        <div class="imagen-port">
+                            <img src="img1.jpg" alt="">
+                        </div>
+                        <div class="imagen-port">
+                            <img src="img2.jpg" alt="">
+                        </div>
+                        <div class="imagen-port">
+                            <img src="img3.jpg" alt="">
+                        </div>
+                        <div class="imagen-port">
+                            <img src="img4.jpg" alt="">
+                        </div>
+                        <div class="imagen-port">
+                            <img src="img5.jpg" alt="">
+                        </div>
+                        <div class="imagen-port">
+                            <img src="img6.png" alt="">
+                        </div>
+                        <div class="imagen-port">
+                            <img src="img7.png" alt="">
+                        </div>
+                        <div class="imagen-port">
+                            <img src="img8.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="clientes contenedor">
+                <h2 class="titulo">Other Testimonials</h2>
+                <div class="cards">
+                    <div class="card">
+                        <img src="god.jpg" alt="">
+                        <div class="contenido-texto-card">
+                            <h4>God</h4>
+                            <p>He is my best creation</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="globo.jpg" alt="">
+                        <div class="contenido-texto-card">
+                            <h4>Literally Everyone</h4>
+                            <p>OMG I LOVE HIM</p>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <section class="about-services">
+                <div class="contenedor">
+                    <h2 class="titulo">Other creations</h2>
+                    <div class="servicio-cont">
+                        <div class="servicio-ind">
+                            <img src="img11.jpg" alt="">
+                            <h3>Bloodborne</h3>
+                            <p>Bloodborne is a 2015 action role-playing game developed by FromSoftware and published by
+                                Sony Computer Entertainment for the PlayStation 4.</p>
+                        </div>
+                        <div class="servicio-ind">
+                            <img src="img12.jpg" alt="">
+                            <h3>SEKIRO</h3>
+                            <p>The game follows a shinobi known as Wolf as he attempts to take revenge on a samurai clan
+                                who attacked him and kidnapped his lord.</p>
+                        </div>
+                        <div class="servicio-ind">
+                            <img src="img13.jpg" alt="">
+                            <h3>Demon Souls</h3>
+                            <p>Demon's Souls is an action role-playing game developed by Bluepoint Games, with
+                                assistance from Japan Studio, and published by Sony Interactive Entertainment.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="contenedor">
+                <div class="content-foot">
+                    <h4>I LOVE MIYAZAKI</h4>
+                </div>
+            </div>
+        </footer>
+    </header>
+
+</body>
+
+</html>
