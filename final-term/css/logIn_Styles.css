@@ -1,0 +1,165 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "roboto", arial, helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+body .hero {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+}
+body .hero .vid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body .hero .container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(0deg, rgba(70, 116, 154, 0.6039215686), rgba(27, 40, 56, 0.7960784314));
+}
+body .hero .container .txt {
+  display: flex;
+  width: 500px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: white;
+}
+body .hero .container .txt h1 {
+  font-weight: 300;
+}
+body .hero .container .hud {
+  width: 450px;
+  height: 550px;
+  background-color: #20232b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 450px) {
+  body .hero .container .hud {
+    width: 300px;
+    height: 400px;
+  }
+}
+body .hero .container .hud h2 a {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #AFAFAF;
+}
+body .hero .container .hud h2 a:hover {
+  color: #f3f3f3;
+}
+@media (max-width: 450px) {
+  body .hero .container .hud h2 a {
+    font-size: 0.5em;
+  }
+}
+body .hero .container .hud .form {
+  padding: 40px 60px 40px 60px;
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body .hero .container .hud .form .name {
+  color: #1999ff;
+  font-weight: bold;
+}
+@media (max-width: 450px) {
+  body .hero .container .hud .form .name {
+    font-size: 0.8em;
+  }
+}
+body .hero .container .hud .form .password {
+  color: #AFAFAF;
+  font-weight: 300;
+}
+@media (max-width: 450px) {
+  body .hero .container .hud .form .password {
+    font-size: 0.8em;
+  }
+}
+body .hero .container .hud .form .field {
+  height: 50px;
+  background-color: #3f4554;
+  border: solid 1px #23262e;
+  border-radius: 3px;
+  padding-left: 5%;
+  color: #ffffff;
+  font-size: 1.2em;
+}
+body .hero .container .hud .form .field:focus {
+  padding-left: 5%;
+  color: #ffffff;
+}
+@media (max-width: 450px) {
+  body .hero .container .hud .form .field {
+    font-size: 0.8em;
+  }
+}
+body .hero .container .hud .form .mini_txt {
+  padding: 0;
+  margin: 0;
+}
+body .hero .container .hud .form .center-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .hero .container .hud .form .center-content .btn {
+  margin-top: 20px;
+  color: white;
+  width: 100px;
+  height: 40px;
+  background-color: #2D73FF;
+  border: rgba(0, 0, 0, 0);
+  font-size: 1em;
+  border-radius: 3px;
+}
+@media (max-width: 450px) {
+  body .hero .container .hud .form .center-content .btn {
+    font-size: 0.8em;
+  }
+}
+body .hero .container .hud .form .center-content .btn:hover {
+  background-color: #06BFFF;
+}
+body .hero .fixed-bar {
+  width: 100%;
+  height: 70px;
+  background-color: #20232b;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .hero .fixed-bar a {
+  margin-top: 20px;
+  width: 140px;
+  height: 60px;
+}
+body .hero .fixed-bar a .logo {
+  background-image: url("/img/logo1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 140px;
+  height: 70%;
+}/*# sourceMappingURL=logIn_Styles.css.map */

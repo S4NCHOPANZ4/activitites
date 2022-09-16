@@ -1,0 +1,172 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'roboto', arial, helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    .hero {
+        position: relative;
+        width: 100%;
+        min-height: 100vh;
+
+        .vid {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .container {
+
+            .txt {
+                display: flex;
+                width: 500px;
+                margin-top: 30px;
+                margin-bottom: 30px;
+                color: white;
+                h1 {
+                    font-weight: 300;
+                }
+            }
+
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-image: linear-gradient(0deg,
+            #46749a9a,
+            #1b2838cb);
+
+            .hud {
+
+                width: 450px;
+                height: 550px;
+                background-color: #20232b;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                @media (max-width: 450px){
+                    width: 300px;
+                    height: 400px;
+                }
+                h2{
+                    a{
+                        font-size: 1rem;
+                        font-weight: 300;
+                        color: #AFAFAF;
+                        &:hover{
+                            color: #f3f3f3;
+                        }
+                        @media (max-width: 450px){
+                            font-size: .5em;
+                        }
+                    }
+                  
+                }
+                
+                .form{
+                    padding: 40px 60px 40px 60px;
+                    width: 100%;
+                    height: 70%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    .name{
+                        color: #1999ff;
+                        font-weight: bold;
+                        @media (max-width: 450px){
+                            font-size: .8em;
+                        }
+                    }
+                    .password{
+                        color: #AFAFAF;
+                        font-weight:300;
+                        @media (max-width: 450px){
+                            font-size: .8em;
+                        }
+                    }
+                    .field{
+                        height: 50px;
+                        background-color: #3f4554;
+                        border: solid 1px #23262e;
+                        border-radius: 3px;
+                        padding-left: 5%;  
+                        color: #ffffff;
+                        font-size: 1.2em;
+                        &:focus{
+                            padding-left: 5%;  
+                            color: #ffffff;
+                        }
+                        @media (max-width: 450px){
+                            font-size: .8em;
+                        }
+                    }
+                    .mini_txt{                      
+                        padding: 0;
+                        margin: 0;
+                    }
+                    .center-content{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        .btn{
+                            margin-top: 20px;
+                            color: white;
+                            width: 100px;
+                            height: 40px;              
+                            background-color: #2D73FF;
+                            border: #00000000;
+                            font-size: 1em;
+                            border-radius: 3px;
+                            @media (max-width: 450px){
+                                font-size: .8em;
+                            }
+                            &:hover {
+                                background-color: #06BFFF;
+                            }
+                        }
+                    }
+                    
+                }
+                
+               
+            }
+        }
+
+        .fixed-bar {
+            width: 100%;
+            height: 70px;
+            background-color: #20232b;
+            position: fixed;
+            z-index: 3;
+            top: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            a {
+                margin-top: 20px;
+                width: 140px;
+                height: 60px;
+
+                .logo {
+                    background-image: url('/img/logo1.png');
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    background-position: center;
+                    width: 140px;
+                    height: 70%;
+                }
+            }
+        }
+    }
+}
