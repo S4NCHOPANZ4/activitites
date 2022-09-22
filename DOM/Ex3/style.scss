@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;   
+}
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+html{
+    font-family: 'Press Start 2P', cursive;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/nubes.jpg');
+
+    .score{
+        color: white;
+        position: relative;
+        top: -100px
+    }
+    .scene{
+        border: 20px solid #60091e;
+        background-image: url('/grass.png');
+        width: 2000px;
+        height: 1000px;
+        position: absolute;
+        #avatar{
+            position: relative;
+            height: 200px;
+            width: 200px;
+            top: 250px;
+            left: 800px;
+        }
+        #coin{
+            height: 100px;
+            width: 100px;
+            position: relative;
+            top: 250px;
+            left: 800px;
+        }
+    }
+}
