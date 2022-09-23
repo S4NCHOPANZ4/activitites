@@ -15,7 +15,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("/nubes.jpg");
+  background-image: url("/DOM/Ex3/nubes.jpg");
 }
 body .score {
   color: white;
@@ -24,7 +24,7 @@ body .score {
 }
 body .scene {
   border: 20px solid #60091e;
-  background-image: url("/grass.png");
+  background-image: url("/DOM/Ex3/grass.png");
   width: 2000px;
   height: 1000px;
   position: absolute;
