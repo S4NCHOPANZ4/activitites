@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/cart.css">
+</head>
+<body>
+    <script src="/JS/carritoMov.js" defer></script>
+    <div class="fixed-bar">
+        <a href="/index.html">
+        <div class="logo"></div>
+         </a>
+    </div>
+    <nav class="navbar">
+        <ul>
+            <li class="navbar-logo">Steam</li>
+            <li class="navbar-toggle"></li>
+            <li class="navbar-links"><a href="#">Home</a></li>
+            <li class="navbar-links"><a href="#">News</a></li>
+            <li class="navbar-links"><a href="#">Labs</a></li>
+            <li class="navbar-links"><a href="gamescreen.html">Categories</a></li>
+        </ul>
+    </nav>
+    
+    <div class="halloween">
+        <h2>halloween recommendations</h2>
+       
+       
+    </div>
+
+    
+    <div class="contenedor">
+        
+        <div class="contC">
+        
+        <div class="gamecard" id="items">    
+            <template id="template">
+            
+           
+            <div class="sub">
+                <a href="/gamescreen_1.html">
+                     <img src="" alt="" class="img" id="img">
+                     
+                </a>
+               
+            <div class="desc"> 
+                <div class="extras">
+                    <h6 class="precio_1"></h6>
+                    <h5 class="name"></h5>
+                    <img src="" alt="" id="sub_img" class="sub_img">
+                  
+                </div>
+                <div class="price" id="price">
+                    <h3>precio</h3>
+                </div>
+                <div class="buttons"> 
+                   
+                     <button class="comprar" id="comprar">Add to Cart</button>
+                </div>
+              
+            </div>
+            </div>
+        </template>
+        </div>
+        </div>
+        <div class="contS">
+            <h2 class="cart">Your shopping cart</h2>
+            <table>
+     
+                <tbody id="iList">
+                    <tr class="table">    
+                        <td class="img">
+                            <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1237210/capsule_616x353.jpg?t=1581891611" alt="sub_img">
+                        </td>
+                        <td >
+                            <div class="info">
+                            <p class="name">Cart is empty</p>
+                            <p class="price">~</p>
+                        </div>
+                        </td>
+                        <td>
+                            <div class="buttons">
+                                <button></button>
+                            </div>
+                            
+                        </td>
+                       
+                        
+                       
+                    </tr>
+                    <template id="templateList">
+                    <tr class="table">    
+                        <td class="img">
+                            <img src="sub_img" alt="sub_img">
+                        </td>
+                        <td>
+                            <div class="info">
+                            <p class="name">$</p>
+                            <p class="price">$</p>
+                        </div>
+                        </td>
+                        <td>
+                            <div class="buttons">
+                               
+                                <button id="delete" class="delete"></button>
+                            </div>
+                            
+                        </td>
+                        
+                       
+                    </tr>
+                    </template>
+                </tbody>
+            </table> 
+          
+            <div class="total">
+                <p class="totalT">Total: </p>
+                <p class="count" id="count">CDN$</p>
+
+            </div>
+            <div class="deleteAll">
+                <button id="delete_all" class="removeAll">remove all</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <script src="/JS/gamescreen.js" defer></script>
+    <link rel="stylesheet" href="css//game_screen_Styles_1.css">
+
+</head>
+
+<body>
+
+    <script src="/JS/carritoMov.js" defer></script>
+    <div class="fixed-bar">
+        <a href="/index.html">
+        <div class="logo"></div>
+         </a>
+    </div>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li class="navbar-logo">Steam</li>
+                <li class="navbar-toggle"></li>
+                <li class="navbar-links"><a href="#">Home</a></li>
+                <li class="navbar-links"><a href="#">News</a></li>
+                <li class="navbar-links"><a href="#">Labs</a></li>
+                <li class="navbar-links"><a href="gamescreen.html">Categories</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="game_name">
+        <h3 class="title">Half-Life: Alyx</h3>
+    </div>
+    <div class="container">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide1">
+                    <video controls>
+                        <source src="/vid/hl_vid.mp4" type="video/mp4">
+                        </source>
+                    </video>
+                </div>
+                <div class="swiper-slide slide2"></div>
+                <div class="swiper-slide slide3"></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="desc">
+            <div class="img"></div>
+            <div class="txt">
+                <div class="sub_desc_1"> 
+                <p>Half-Life: Alyx is Valve’s VR return to the Half-Life series. It’s the story of an impossible fight against a vicious alien race known as the Combine, set between the events of Half-Life and Half-Life 2. Playing as Alyx Vance, you are humanity’s only chance for survival.</p></div>
+                <div class="sub_desc_2">
+                <p class="reviews">RECENT REVIEWS: <a href="#">Overwhelmingly Positive</a></p>
+                <p class="allreviwes">ALL REVIEWS: <a href="#">Overwhelmingly Positive</a></p>
+                <p class='date'>RELEASE DATE: 23 Mar, 2020</p>
+                <p class="dev">DEVELOPER: <a href="#">Valve</a></p>
+                <p class="publ">PUBLISHER: <a href="#">Valve</a></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="more_info">
+    <div class="sec_1">
+    <div class="play">
+        <div class="txt">
+            <h2>Buy Half-Life: Alyx</h2>
+        </div>
+        <div data-id="1" id="buttonCart" class="btn">
+            <div class="price">
+                <h2>CDN$ 0.10</h2>
+            </div>
+            <form action="/cart.html">
+                <button>Add to Cart</button>
+            </form>
+            
+        </div>
+
+    </div>
+
+
+    <div class="imgdiv">
+
+    </div>
+
+    <div class="txtCont">
+        <table class="table">
+            <thead>
+              <tr>
+                <th></th>
+                <th>Interface</th>
+                <th>Full Audio</th>
+                <th>Subtitles</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>English</td>
+                <td><a href="#">✔</a></td>
+                <td><a href="#">✔</a></td>
+                <td><a href="#">✔</a></td>
+              </tr>
+              <tr>
+                <td>German</td>
+                <td><a href="#">✔</a></td>
+                <td><a href="#">✔</a></td>
+                <td><a href="#">✔</a></td>
+              </tr>
+              <tr>
+                <td>Russian</td>
+                <td><a href="#">✔</a></td>
+                <td><a href="#">✔</a></td>
+                <td><a href="#">✔</a></td>
+              </tr>
+              <tr>
+                <td>Spanish</td>
+                <td><a href="#">✔</a></td>
+                <td><a href="#">✔</a></td>
+                <td><a href="#">✔</a></td>
+              </tr>
+              <tr>
+                <td>French</td>
+                <td><a href="#">✔</a></td>
+                <td></td>
+                <td><a href="#">✔</a></td>
+              </tr>
+            </tbody>
+          </table>          
+    </div>
+</div>
+<div class="sec_2">
+    <div class="sub_sec_1"> 
+    <div class="text_title">
+        <h3>Is this game relevant to you?</h3>
+    </div>
+    <div class="text">
+        <p><a class="tic">✔</a> User reviews: <a href="#">Overwhelmingly Positive</a></p>
+        <p><a class="tic">✔</a> In the Top Sellers</p>
+    </div>
+</div>
+    <div class="sub_sec_2">
+       <div class="carac">
+        <p class="icon">🎖</p>
+        <p class="desc">Steam Achievements</p>
+       </div>
+       <div class="carac">
+        <p class="icon">🕹</p>
+        <p class="desc">Full controller support</p>
+       </div>
+       <div class="carac">
+        <p class="icon">♟</p>
+        <p class="desc">Single-player</p>
+       </div>
+    </div>
+   
+</div>
+    
+</div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+</body>
+<footer>
+    <div class="foot"></div>
+</footer>
+</html>

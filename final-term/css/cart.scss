@@ -1,0 +1,326 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: 'roboto', arial, helvetica, sans-serif;
+}
+
+.fixed-bar {
+    width: 100%;
+    height: 70px;
+    background-color: #20232b;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    a {
+        margin-top: 20px;
+        width: 140px;
+        height: 60px;
+
+        .logo {
+            background-image: url('/img/logo1.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            width: 140px;
+            height: 70%;
+        }
+    }
+}
+.navbar {
+    max-width: 1100px;
+    margin: 40px auto 30px;
+
+    ul {
+
+        margin-top: 100px;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        background-image: linear-gradient(0deg,
+                #365976,
+                #5492c6);
+        color: white;
+
+        @media (max-width: 600px) {
+            flex-wrap: wrap;
+        }
+
+        .navbar-logo {
+            flex: 1;
+            font-size: 1.5rem;
+            user-select: none;
+            color: white;
+        }
+
+        .navbar-toggle {
+            background-image: url('/img/toggle.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            display: none;
+            margin-right: 10px;
+
+            @media (max-width: 600px) {
+                display: block;
+            }
+        }
+
+        .navbar-links {
+            border-top: 2px solid #5493c600;
+            border-right: 2px solid #5493c600;
+            border-left: 2px solid #5493c6;
+            border-bottom: 2px solid #5493c600;
+
+            &:hover {
+                background-color: #5492c6;
+            }
+
+            @media (max-width: 600px) {
+                display: none;
+                width: 100%;
+                text-align: center;
+                border-top: 2px solid #5493c6;
+                border-right: 2px solid #5493c600;
+                border-left: 2px solid #5493c600;
+                border-bottom: 2px solid #5493c600;
+            }
+        }
+
+        li {
+            list-style-type: none;
+            padding: 1rem;
+
+            a {
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+body {
+    background-image: linear-gradient(0deg,
+            #2a475e,
+            #1b2838);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    .halloween{
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    max-width: 1100px;
+    margin: auto;
+    width: 100%;
+    height: 150px;
+    background-image:   linear-gradient(30deg,
+    rgba(0, 0, 0, 0.41),
+    rgba(0, 0, 0, 0.632)),url("https://www.muycomputer.com/wp-content/uploads/2021/10/juegos-de-terror-con-pocos-requisitos-1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    h2{
+        font-size: 2rem;
+        color: rgb(109, 4, 0);
+        font-family: 'Nosifer', cursive;
+    }
+    }
+    
+    .contenedor {
+        max-width: 1100px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+
+        .contC {
+            width: 62%;
+
+
+
+            .gamecard {
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                .extras{
+                    display: none;
+                }
+                .sub {
+                    padding: 10px;
+                    width: 30%;
+                    height: 300px;
+                    
+                        .img {
+
+                            border-radius: 10px;
+                            width: 100%;
+                            height: 70%;
+                            padding: 3px;
+                            border: 3px solid #70a6e800;
+
+                            &:hover {
+                                border: 3px solid #70a6e8;
+                                opacity: .8;
+
+                            }
+
+                        }
+            
+
+                    .desc {
+                        margin-left: 10px;
+                        background-color: #182936;
+                        display: flex;
+                        justify-content: flex-end;
+
+                        .price {
+                            margin-left: 10px;
+                            width: 100%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            h3 {
+                                font-size: .9em;
+                                color: white;
+                                font-weight: 300;
+                            }
+                        }
+
+                        .buttons {
+                            padding-left: 10px;
+
+                            button {
+
+                                width: 100px;
+                                height: 40px;
+                                color: white;
+                                background-color: #a5d105;
+                                border-top: 2px solid #a9d507;
+                                border-right: 2px solid #a9d507;
+                                border-left: 2px solid #a9d507;
+                                border-bottom: solid #00000000;
+
+                                &:hover {
+                                    background-color: #b9eb03;
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+
+        .contS {
+           
+            width: 35%;
+            height: 100px;
+            h2{
+                margin-bottom: 10px;
+                color: white;
+                font-weight: 300;
+                
+            }
+            .total{
+                background-color: #2d506d;
+                width: 99%;
+                display: flex;
+                justify-content: space-between;
+                margin-top: 10px;
+                .totalT{
+                    margin:10px;
+                    margin-left: 10px;
+                    color: white;
+                }
+                .count{
+                    margin: 10px;
+                    color: white;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
+table{
+    background-color: #2a475e;
+   
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+.table{
+    color: #395476;
+    
+    td{
+       color: white;
+        height: 70px;
+        .price{
+            width: 80px;
+            height: 100%;
+            font-size: .7em;
+        }
+        .name{
+            width: 150px;
+            font-size: .9em;
+        }
+        .buttons{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 70px;
+            height: 100%;
+           
+            button{
+                width: 30%;
+                height: 20px;
+                background-color: #00000000;
+                background-image: url('/img/icon.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                border-color: #00000000;
+                color: #00000000;
+                &:hover{
+                    background-color: #1b2838;
+                }
+            }
+            
+        }
+    }
+    .img{
+        margin-left: 5px;
+        width: 150px;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        img{
+            box-shadow: rgb(0, 0, 0) 0px 5px 15px;
+            width: 80%;
+            height: 80%;
+        }
+    }
+}
+}
+.deleteAll{
+    .removeAll{
+        margin-top: 20px;
+        width: 80px;
+        height: 30px;
+        color: white;
+        background-color: #a5d105;
+        border-top: 2px solid #a9d507;
+        border-right: 2px solid #a9d507;
+        border-left: 2px solid #a9d507;
+        border-bottom: solid #00000000;
+        font-size: .7rem;
+    }
+}
